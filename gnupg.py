@@ -690,7 +690,7 @@ HEX_DIGITS_RE = re.compile(r'[0-9a-f]+$', re.I)
 
 class GPG(object):
 
-    decode_errors = 'strict'
+    decode_errors = 'ignore'
 
     result_map = {
         'crypt': Crypt,
